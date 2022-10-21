@@ -1,0 +1,8 @@
+#close:hover
+{
+    -fx-fill: #C50000;
+}
+#minimize:hover
+{
+    -fx-fill: #058B00;
+}

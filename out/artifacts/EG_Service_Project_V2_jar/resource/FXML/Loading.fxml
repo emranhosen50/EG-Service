@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoadingController">
+    <children>
+        <ImageView fitHeight="850.0" fitWidth="1600.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-0.27447509765625" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+            <image>
+                <Image url="@../Images/cover.png" />
+            </image>
+        </ImageView>
+        <Pane fx:id="bar" onMouseDragged="#mouseDrag" onMousePressed="#mousePressed" prefHeight="40.0" prefWidth="1600.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Circle fx:id="close" fill="RED" layoutX="1565.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+                <Circle fx:id="minimize" fill="#08e900" layoutX="1528.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="779.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/eg_logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <ImageView fitHeight="604.0" fitWidth="1231.0" layoutX="310.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="193.7" AnchorPane.rightAnchor="77.1446533203125" AnchorPane.topAnchor="129.0">
+            <image>
+                <Image url="@../Images/swpCover.png" />
+            </image>
+        </ImageView>
+        <ProgressBar fx:id="LoadingProgress" layoutX="484.0" layoutY="597.0" prefHeight="35.0" prefWidth="590.0" style="-fx-accent: #88BDFF; -fx-control-inner-background: #FFFFFFFF;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="58.0" layoutX="410.0" layoutY="489.0" stroke="WHITE" strokeType="INSIDE" width="813.0" />
+      <Text fx:id="MessageForUser" fill="#578bca" layoutX="497.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Switching to service provider account " wrappingWidth="572.9589233398438">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+        <JFXButton fx:id="CSAButton" layoutX="631.0" layoutY="603.0" onAction="#ActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #578BCA; -fx-background-radius: 7;" text="Create SP acount" textFill="WHITE" AnchorPane.leftAnchor="678.0" AnchorPane.rightAnchor="724.0">
+            <font>
+                <Font name="Calibri" size="20.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

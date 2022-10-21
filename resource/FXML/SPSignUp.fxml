@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SPSingupController">
+    <ImageView fitHeight="850.0" fitWidth="658.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../Images/formBackground.jpg" />
+        </image>
+    </ImageView>
+    <Pane onMouseDragged="#mouseDrag" onMousePressed="#mousePressed" prefHeight="40.0" prefWidth="1600.0" style="-fx-background-color: FFFFFF;">
+        <children>
+            <Circle fx:id="close" fill="RED" layoutX="1565.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fx:id="minimize" fill="#08e900" layoutX="1528.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="779.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/eg_logo.png" />
+                </image>
+            </ImageView>
+        </children>
+    </Pane>
+
+    <Pane fx:id="SPChoosePane" layoutX="658.0" layoutY="40.0" prefHeight="810.0" prefWidth="942.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="658.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+        <children>
+            <Text fill="#859db7" layoutX="66.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="184.177734375">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <Text fill="#2f2f2f" layoutX="66.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up for SP Account" wrappingWidth="538.8444213867188">
+                <font>
+                    <Font name="Calibri" size="50.0" />
+                </font>
+            </Text>
+
+
+            <JFXCheckBox fx:id="IAgree" checkedColor="#578bca" layoutX="66.0" layoutY="559.0" style="-fx-alignment: Center;" text="I agree to the " textAlignment="RIGHT">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </JFXCheckBox>
+            <Text fill="#6b90b8" layoutX="187.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-alignment: Center;" text="Terms and Conditions" textAlignment="RIGHT">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Text>
+            <JFXButton fx:id="SpSignUpButton" layoutX="66.0" layoutY="620.0" onAction="#ActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Sign up" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </JFXButton>
+            <TextField fx:id="NidCard" layoutX="66.0" layoutY="201.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter nid number here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-width: 2; -fx-border-color: #578BCA; -fx-border-radius: 7;">
+                <font>
+                    <Font size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </TextField>
+            <Text fill="#578bca" layoutX="66.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NID number">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <ImageView fx:id="BackSpChoose" fitHeight="62.0" fitWidth="62.0" layoutX="750.0" layoutY="60.0" onMouseClicked="#MouseClick" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/back_icon.png" />
+                </image>
+            </ImageView>
+            <Text fill="#578bca" layoutX="66.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your service">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <Text fill="#a5a5a5" layoutX="260.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(select services you can offer)">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Text>
+            <JFXRadioButton fx:id="RB_Blood" layoutX="66.0" layoutY="356.0" onAction="#RadioButtonActionEvent" selected="true" style="-jfx-selected-color: #578BCA;" text="Blood donation">
+                <font>
+                    <Font name="Calibri Bold" size="20.0" />
+                </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="RB_Ambulance" layoutX="66.0" layoutY="386.0" onAction="#RadioButtonActionEvent" style="-jfx-selected-color: #578BCA;" text="Ambulance service">
+                <font>
+                    <Font name="Calibri Bold" size="20.0" />
+                </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="RB_Currier" layoutX="66.0" layoutY="416.0" onAction="#RadioButtonActionEvent" style="-jfx-selected-color: #578BCA;" text="Currier service">
+                <font>
+                    <Font name="Calibri Bold" size="20.0" />
+                </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="RB_Voluntary" layoutX="66.0" layoutY="446.0" onAction="#RadioButtonActionEvent" style="-jfx-selected-color: #578BCA;" text="Voluntary and Relief">
+                <font>
+                    <Font name="Calibri Bold" size="20.0" />
+                </font>
+            </JFXRadioButton>
+            <Text fill="#a5a5a5" layoutX="275.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(organization)">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Text>
+
+        </children>
+    </Pane>
+    <Pane fx:id="BloodPane" layoutX="668.0" layoutY="50.0" prefHeight="810.0" prefWidth="942.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <children>
+            <Text fill="#859db7" layoutX="66.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="184.177734375">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <Text fill="#2f2f2f" layoutX="66.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up for SP Account" wrappingWidth="538.8444213867188">
+                <font>
+                    <Font name="Calibri" size="50.0" />
+                </font>
+            </Text>
+            <JFXButton fx:id="NextBlood" layoutX="66.0" layoutY="620.0" onAction="#NextActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Next" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </JFXButton>
+            <Text fx:id="Blood_OutOf" fill="#859db7" layoutX="66.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 out of 4 (Blood donation)">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <ImageView fx:id="BackBlood" fitHeight="62.0" fitWidth="62.0" layoutX="750.0" layoutY="60.0" onMouseClicked="#MouseClick" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/back_icon.png" />
+                </image>
+            </ImageView>
+            <TextField fx:id="B_ActiveNumber" layoutX="66.0" layoutY="322.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter number here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-width: 2; -fx-border-color: #578BCA; -fx-border-radius: 7;">
+                <font>
+                    <Font size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </TextField>
+            <Text fill="#578bca" layoutX="66.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active phone number">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <ComboBox fx:id="B_ServiceArea" layoutX="66.0" layoutY="442.0" prefHeight="48.0" prefWidth="217.0" promptText="Select" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </ComboBox>
+            <Text fill="#578bca" layoutX="66.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service area">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <ComboBox fx:id="B_BloodGroup" layoutX="457.0" layoutY="322.0" prefHeight="48.0" prefWidth="217.0" promptText="Select" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </ComboBox>
+            <Text fill="#578bca" layoutX="457.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood group">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+        </children>
+    </Pane>
+    <Pane fx:id="AmbulancePane" layoutX="678.0" layoutY="60.0" prefHeight="810.0" prefWidth="942.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <children>
+            <Text fill="#859db7" layoutX="66.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="184.177734375">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <Text fill="#2f2f2f" layoutX="66.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up for SP Account" wrappingWidth="538.8444213867188">
+                <font>
+                    <Font name="Calibri" size="50.0" />
+                </font>
+            </Text>
+            <JFXButton fx:id="NextAmbulance" layoutX="66.0" layoutY="620.0" onAction="#NextActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Next" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </JFXButton>
+            <Text fx:id="Ambulamce_OutOf" fill="#859db7" layoutX="66.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 out of 4 (Ambulance service)">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <ImageView fx:id="BackAmbulance" fitHeight="62.0" fitWidth="62.0" layoutX="750.0" layoutY="60.0" onMouseClicked="#MouseClick" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/back_icon.png" />
+                </image>
+            </ImageView>
+            <TextField fx:id="A_LicenseNumber" layoutX="66.0" layoutY="325.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter number here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-width: 2; -fx-border-color: #578BCA; -fx-border-radius: 7;">
+                <font>
+                    <Font size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </TextField>
+            <Text fill="#578bca" layoutX="66.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="License plate number ">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <ComboBox fx:id="A_ServiceArea" layoutX="457.0" layoutY="325.0" prefHeight="48.0" prefWidth="217.0" promptText="Select" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </ComboBox>
+            <Text fill="#578bca" layoutX="457.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service area">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <TextField fx:id="A_DriverNumber" layoutX="66.0" layoutY="440.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter number here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-width: 2; -fx-border-color: #578BCA; -fx-border-radius: 7;">
+                <font>
+                    <Font size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </TextField>
+            <Text fill="#578bca" layoutX="66.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver's contact number ">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+        </children>
+    </Pane>
+    <Pane fx:id="VoluntaryPane" layoutX="698.0" layoutY="80.0" prefHeight="810.0" prefWidth="942.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <children>
+            <Text fill="#859db7" layoutX="66.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="184.177734375">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <Text fill="#2f2f2f" layoutX="66.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up for SP Account" wrappingWidth="538.8444213867188">
+                <font>
+                    <Font name="Calibri" size="50.0" />
+                </font>
+            </Text>
+            <JFXButton fx:id="NextVoluntary" layoutX="66.0" layoutY="620.0" onAction="#NextActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Next" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </JFXButton>
+            <Text fx:id="Voluntary_OutOf" fill="#859db7" layoutX="66.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 out of 4 (Voluntary and Relief)">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <ImageView fx:id="BackVoluntary" fitHeight="62.0" fitWidth="62.0" layoutX="750.0" layoutY="60.0" onMouseClicked="#MouseClick" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/back_icon.png" />
+                </image>
+            </ImageView>
+            <TextField fx:id="V_NYO" layoutX="66.0" layoutY="325.0" prefHeight="48.0" prefWidth="608.0" promptText="Enter organization name here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-width: 2; -fx-border-color: #578BCA; -fx-border-radius: 7;">
+                <font>
+                    <Font size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </TextField>
+            <Text fill="#578bca" layoutX="66.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of your organization">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <ComboBox fx:id="V_ServiceArea" layoutX="66.0" layoutY="451.0" prefHeight="48.0" prefWidth="217.0" promptText="Select" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </ComboBox>
+            <Text fill="#578bca" layoutX="66.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service area">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+        </children>
+    </Pane>
+    <Pane fx:id="CurrierPane" layoutX="688.0" layoutY="70.0" prefHeight="810.0" prefWidth="942.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <children>
+            <Text fill="#859db7" layoutX="66.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="184.177734375">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <Text fill="#2f2f2f" layoutX="66.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up for SP Account" wrappingWidth="538.8444213867188">
+                <font>
+                    <Font name="Calibri" size="50.0" />
+                </font>
+            </Text>
+            <JFXButton fx:id="NextCurrier" layoutX="66.0" layoutY="620.0" onAction="#NextActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Next" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </JFXButton>
+            <Text fx:id="Currier_OutOf" fill="#859db7" layoutX="66.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 out of 4 (Currier service)">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <ImageView fx:id="BackCurrier" fitHeight="62.0" fitWidth="62.0" layoutX="750.0" layoutY="60.0" onMouseClicked="#MouseClick" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/back_icon.png" />
+                </image>
+            </ImageView>
+            <TextField fx:id="C_ActiveNumber" layoutX="66.0" layoutY="325.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter number here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-width: 2; -fx-border-color: #578BCA; -fx-border-radius: 7;">
+                <font>
+                    <Font size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </TextField>
+            <Text fill="#578bca" layoutX="66.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Active phone number">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <ComboBox fx:id="C_ServiceArea" layoutX="457.0" layoutY="325.0" prefHeight="48.0" prefWidth="217.0" promptText="Select" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </ComboBox>
+            <Text fill="#578bca" layoutX="457.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service area">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <ComboBox fx:id="C_VehiclesType" layoutX="66.0" layoutY="451.0" prefHeight="48.0" prefWidth="217.0" promptText="Select" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                <padding>
+                    <Insets left="20.0" />
+                </padding>
+            </ComboBox>
+            <Text fill="#578bca" layoutX="66.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicles Type">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+        </children>
+    </Pane>
+
+</AnchorPane>

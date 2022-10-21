@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <AnchorPane layoutX="334.0" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+         <children>
+            <Pane fx:id="ServiceReqPane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" />
+            <Pane fx:id="ProfilePane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" />
+            <Pane fx:id="CovidUpdatePane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" />
+            <Pane fx:id="AboutPane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+               <children>
+                  <Text fill="#578bca" layoutX="454.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2021 EZ Service.All rights reserved." textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#575656" layoutX="32.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This software was created by">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="530.0" fitWidth="369.0" layoutX="195.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileBack.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="325.0" fitWidth="229.0" layoutX="265.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileGlass.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="105.0" fitWidth="124.0" layoutX="313.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/dev_profileSizan.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="288.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shiam Ahmed Sizan">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="277.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UI/UX Designer || Full Stack Java Developer">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="9.0" arcWidth="8.0" fill="#ffad44" height="36.0" layoutX="272.0" layoutY="517.0" stroke="TRANSPARENT" strokeLineJoin="BEVEL" strokeType="INSIDE" style="-fx-border-radius: 600;" width="216.0" />
+                  <Text fill="WHITE" layoutX="312.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sizan.szn@gmail.com">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="310.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/facebook.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="345.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/whatapps.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="381.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/skype.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="419.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/linkedin.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="530.0" fitWidth="369.0" layoutX="651.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileBack.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="325.0" fitWidth="229.0" layoutX="721.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileGlass.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="105.0" fitWidth="124.0" layoutX="769.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/dev_profileEmran.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="744.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emran Hosern Emon">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="731.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphic Designer || Full Stack Java Developer">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="9.0" arcWidth="8.0" fill="#ffad44" height="36.0" layoutX="728.0" layoutY="517.0" stroke="TRANSPARENT" strokeLineJoin="BEVEL" strokeType="INSIDE" style="-fx-border-radius: 600;" width="216.0" />
+                  <Text fill="WHITE" layoutX="736.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="imranhosen.imon11@gmail.com">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="766.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/facebook.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="801.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/whatapps.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="837.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/skype.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="875.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/linkedin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="HomePane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#aebdce" layoutX="213.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offer services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Pane layoutX="32.0" layoutY="289.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #FFD1D1;">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="140.0" layoutX="130.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/blood_bank.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#ff6161" layoutX="97.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Bank">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="438.0" layoutY="289.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #C4C4FF;">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="140.0" layoutX="133.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/ambulance.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#5e5ebe" layoutX="97.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ambulance">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="844.0" layoutY="289.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #9EFFD4;">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="140.0" layoutX="133.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/sos_servce.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#23b676" layoutX="106.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SOS Servce">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="32.0" layoutY="539.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #FFFCA8;">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="140.0" layoutX="133.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/fire%20_service.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#bfae11" layoutX="97.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fire Service">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="438.0" layoutY="539.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #F6B9FF;">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="140.0" layoutX="133.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/e_currier.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#bf67cd" layoutX="115.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Currier">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="844.0" layoutY="539.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #9FE0FF;">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="140.0" layoutX="133.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/voluntary_relief.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#399eca" layoutX="31.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voluntary and Relief">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <TextField layoutX="836.0" layoutY="200.0" prefHeight="37.0" prefWidth="361.0" promptText="Search for service...">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children></Pane>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="850.0" prefWidth="334.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="329.0" layoutX="35.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/eg-service-log.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="homeButton" alignment="TOP_LEFT" layoutX="35.0" layoutY="183.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" style="-fx-background-color: #578BCA;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="home_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/home_h.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="covid_19Button" alignment="TOP_LEFT" layoutX="35.0" layoutY="248.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" text="Covid-19 updates" textFill="#578bca">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="covid_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/covid_b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="profileButton" alignment="TOP_LEFT" layoutX="35.0" layoutY="318.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" text="Profile" textFill="#578bca">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="profile_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile_b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="serviceButton" alignment="TOP_LEFT" layoutX="35.0" layoutY="388.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" text="Service request" textFill="#578bca">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="service_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/service_b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="aboutButton" alignment="TOP_LEFT" layoutX="35.0" layoutY="458.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" text="About" textFill="#578bca">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="about_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/about_b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Pane layoutX="35.0" layoutY="560.0" prefHeight="123.0" prefWidth="264.0" style="-fx-background-color: #CC73FF;">
+               <children>
+                  <Text fill="WHITE" layoutX="15.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friday, 23th July" wrappingWidth="193.13671875">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="53.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 : 16">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="204.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PM">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXToggleButton contentDisplay="RIGHT" layoutX="33.0" layoutY="694.0" onAction="#MainBTN_ActionEvent" prefHeight="64.0" prefWidth="260.0" text="Switch to SP" textFill="#7b7b7b">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXButton fx:id="logoutButton" alignment="TOP_LEFT" layoutX="55.0" layoutY="753.0" onAction="#MainBTN_ActionEvent" prefHeight="49.0" prefWidth="238.0" text="Logout" textFill="#7b7b7b">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="titleBar" onMouseDragged="#mouseDrag" onMousePressed="#mousePressed" prefHeight="40.0" prefWidth="1600.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <Circle fx:id="close" fill="RED" layoutX="1565.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fx:id="minimize" fill="#08e900" layoutX="1528.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="779.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/eg_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

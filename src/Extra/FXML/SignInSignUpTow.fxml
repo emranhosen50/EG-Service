@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignInSignUpController">
+   <Pane fx:id="SplashScreenPane" layoutY="40.0" prefHeight="810.0" prefWidth="1600.0" style="-fx-background-color: #FFFFFF;">
+      <children>
+         <MediaView fx:id="mv" fitHeight="850.0" fitWidth="1600.0" onMouseDragged="#mouseDrag" onMousePressed="#mousePressed" />
+      </children>
+   </Pane>
+    <ImageView fitHeight="850.0" fitWidth="658.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../Images/background1.png" />
+        </image>
+    </ImageView>
+    <Pane fx:id="titleBar" onMouseDragged="#mouseDrag" onMousePressed="#mousePressed" prefHeight="40.0" prefWidth="1600.0" style="-fx-background-color: FFFFFF;">
+        <children>
+            <Circle fx:id="close" fill="RED" layoutX="1565.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fx:id="minimize" fill="#08e900" layoutX="1528.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="779.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/eg_logo.png" />
+                </image>
+            </ImageView>
+        </children>
+    </Pane>
+   <ImageView fx:id="mirror" fitHeight="661.0" fitWidth="503.0" layoutX="72.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Images/mirror.png" />
+      </image>
+   </ImageView>
+
+    <Pane fx:id="Signup" layoutX="658.0" layoutY="40.0" prefHeight="810.0" prefWidth="942.0" style="-fx-background-color: #FFFFFF;">
+        <children>
+            <Text fill="#859db7" layoutX="66.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="184.177734375">
+                <font>
+                    <Font name="Calibri" size="25.0" />
+                </font>
+            </Text>
+            <Text fill="#2f2f2f" layoutX="66.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up" wrappingWidth="184.177734375">
+                <font>
+                    <Font name="Calibri" size="50.0" />
+                </font>
+            </Text>
+
+
+            <JFXCheckBox fx:id="CheckBox_I_Agree" checkedColor="#578bca" layoutX="66.0" layoutY="559.0" style="-fx-alignment: Center;" text="I agree to the " textAlignment="RIGHT">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </JFXCheckBox>
+            <Text fill="#6b90b8" layoutX="187.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-alignment: Center;" text="Terms and Conditions" textAlignment="RIGHT">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Text>
+            <Text fill="#a6a7a7" layoutX="66.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account?">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Text>
+            <Text fx:id="SignInText" fill="#6b90b8" layoutX="253.0" layoutY="706.0" onMouseClicked="#MouseClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+            </Text>
+            <JFXButton fx:id="SignUpButton" layoutX="66.0" layoutY="620.0" onAction="#ActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Sign up" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </JFXButton>
+         <TextField fx:id="SignUpName" layoutX="66.0" layoutY="201.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter name here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-width: 2; -fx-border-color: #578BCA; -fx-border-radius: 7;">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </TextField>
+         <Text fill="#578bca" layoutX="66.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Text>
+         <TextField fx:id="SignUpEmail" layoutX="66.0" layoutY="325.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter email here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-color: #578BCA; -fx-border-width: 2; -fx-border-radius: 7;">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </TextField>
+         <Text fill="#578bca" layoutX="66.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Text>
+         <Text fill="#578bca" layoutX="66.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Text>
+         <PasswordField fx:id="SignUpPass" layoutX="66.0" layoutY="444.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter password here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-color: #578BCA; -fx-border-width: 2; -fx-border-radius: 7;">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+            <font>
+               <Font size="20.0" />
+            </font>
+         </PasswordField>
+         <TextField fx:id="SignUpNumber" layoutX="457.0" layoutY="201.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter number here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-color: #578BCA; -fx-border-width: 2; -fx-border-radius: 7;">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </TextField>
+         <Text fill="#578bca" layoutX="457.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Text>
+         <ComboBox fx:id="district" layoutX="457.0" layoutY="324.0" prefHeight="48.0" prefWidth="340.0" promptText="Select" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+            <padding>
+               <Insets left="20.0" />
+            </padding></ComboBox>
+         <Text fill="#578bca" layoutX="457.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Text>
+
+        </children>
+    </Pane>
+   <Pane fx:id="SignIn" layoutX="658.0" layoutY="40.0" prefHeight="810.0" prefWidth="942.0" style="-fx-background-color: #FFFFFF;">
+      <children>
+         <Text fill="#859db7" layoutX="66.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="184.177734375">
+            <font>
+               <Font name="Calibri" size="25.0" />
+            </font>
+         </Text>
+         <Text fill="#2f2f2f" layoutX="66.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in" wrappingWidth="184.177734375">
+            <font>
+               <Font name="Calibri" size="50.0" />
+            </font>
+         </Text>
+         <TextField fx:id="SignInEmail" layoutX="66.0" layoutY="300.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter email here" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);">
+            <font>
+               <Font size="20.0" />
+            </font>
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </TextField>
+         <Text fill="#578bca" layoutX="66.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);;" text="Email">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Text>
+         <Text fill="#578bca" layoutX="66.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Text>
+         <PasswordField fx:id="SignInPass" layoutX="66.0" layoutY="408.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter password here" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-width: 2; -fx-border-color: #578BCA; -fx-border-radius: 7;">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+            <font>
+               <Font size="20.0" />
+            </font>
+         </PasswordField>
+         <Text fill="#a6a7a7" layoutX="66.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+         </Text>
+         <Text fx:id="SignUpText" fill="#6b90b8" layoutX="237.0" layoutY="606.0" onMouseClicked="#MouseClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+         </Text>
+         <JFXButton fx:id="SignInButton" layoutX="66.0" layoutY="500.0" onAction="#ActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font>
+         </JFXButton>
+      </children>
+   </Pane>
+
+</AnchorPane>

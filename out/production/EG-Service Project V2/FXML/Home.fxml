@@ -1,0 +1,1811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <AnchorPane layoutX="334.0" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+         <children>
+            <Pane fx:id="CovidUpdatePane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="49.0" fitWidth="68.0" layoutX="26.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/bangladesh-01.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="120.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bangladesh">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane layoutX="32.0" layoutY="281.0" prefHeight="173.0" prefWidth="329.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4); -fx-border-radius: 10;">
+                     <children>
+                        <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total cases">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#578bca" layoutX="30.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.14M">
+                           <font>
+                              <Font name="System Bold" size="47.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="30.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+3,697 today">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="421.0" layoutY="282.0" prefHeight="173.0" prefWidth="329.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4); -fx-border-radius: 10;">
+                     <children>
+                        <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recovered">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#578bca" layoutX="30.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="970K">
+                           <font>
+                              <Font name="System Bold" size="47.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="30.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8,566 today">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="810.0" layoutY="282.0" prefHeight="173.0" prefWidth="329.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4); -fx-border-radius: 10;">
+                     <children>
+                        <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deaths">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#578bca" layoutX="30.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18,685">
+                           <font>
+                              <Font name="System Bold" size="47.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="30.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+187 today">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="49.0" fitWidth="68.0" layoutX="26.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/worldwide-01.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="100.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Worldwide">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Text>
+                  <Pane layoutX="810.0" layoutY="580.0" prefHeight="173.0" prefWidth="329.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4); -fx-border-radius: 10;">
+                     <children>
+                        <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deaths">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#578bca" layoutX="30.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.14M">
+                           <font>
+                              <Font name="System Bold" size="47.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="421.0" layoutY="580.0" prefHeight="173.0" prefWidth="329.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4); -fx-border-radius: 10;">
+                     <children>
+                        <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recovered">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#578bca" layoutX="30.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                           <font>
+                              <Font name="System Bold" size="47.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="32.0" layoutY="580.0" prefHeight="173.0" prefWidth="329.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4); -fx-border-radius: 10;">
+                     <children>
+                        <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total cases">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#578bca" layoutX="30.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="193M">
+                           <font>
+                              <Font name="System Bold" size="47.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane fx:id="OfferServicesPane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="GetServiceText" fill="#aebdce" layoutX="32.0" layoutY="232.0" onMouseClicked="#MouseClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Get services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="OfferServicesText" layoutX="213.0" layoutY="232.0" onMouseClicked="#MouseClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Offer services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <TextField layoutX="849.0" layoutY="200.0" prefHeight="39.0" prefWidth="356.0" promptText="Search for service..." style="-fx-border-color: #578BCA; -fx-border-width: 2; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="1156.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/search.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="472.0" layoutX="32.0" layoutY="296.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="1196.0" />
+                  <ImageView fitHeight="155.0" fitWidth="160.0" layoutX="556.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/undraw_No.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="583.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oh no!!!">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text layoutX="383.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You're not a registered Service Provider">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <JFXButton fx:id="CreateSPACBTN" buttonType="RAISED" layoutX="522.0" layoutY="684.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Create SP Account" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="ServiceReqPane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="280.0" fitWidth="500.0" layoutX="108.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/bg4.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="280.0" fitWidth="500.0" layoutX="660.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/bg1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="280.0" fitWidth="500.0" layoutX="658.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/bg3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="280.0" fitWidth="500.0" layoutX="108.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/bg2.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="175.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have a request for Blood Donation" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="712.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have a request for Ambulance Service" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="774.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have a request for Relief" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="179.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have a request for Parcel Delivery" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="45.0" layoutX="463.0" layoutY="412.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="110.0" />
+                  <Text fill="#f46e7e" layoutX="486.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="45.0" layoutX="1015.0" layoutY="411.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="110.0" />
+                  <Text fill="#f46e7e" layoutX="1038.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="45.0" layoutX="463.0" layoutY="742.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="110.0" />
+                  <Text fill="#f46e7e" layoutX="486.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="45.0" layoutX="1015.0" layoutY="742.0" stroke="BLACK" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="110.0" />
+                  <Text fill="#f46e7e" layoutX="1038.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accept" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="HomePane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="HomeGetServiceText" layoutX="32.0" layoutY="232.0" onMouseClicked="#MouseClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Get services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="HomeOfferService" fill="#aebdce" layoutX="213.0" layoutY="232.0" onMouseClicked="#MouseClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Offer services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <TextField layoutX="849.0" layoutY="200.0" prefHeight="39.0" prefWidth="356.0" promptText="Search for service..." style="-fx-border-color: #578BCA; -fx-border-width: 2; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="1156.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/search.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="OBloodBank" contentDisplay="TOP" layoutX="37.0" layoutY="286.0" onAction="#OptionButton" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #FFD1D1; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="Blood Bank" textFill="#ff6161">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/blood_bank.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="OAmbulance" contentDisplay="TOP" layoutX="443.0" layoutY="286.0" onAction="#OptionButton" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #C4C4FF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="Ambulance" textFill="#5e5ebe">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/ambulance.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="OSOS" contentDisplay="TOP" layoutX="849.0" layoutY="286.0" onAction="#OptionButton" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #9EFFD4; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="SOS Servce" textFill="#23b676">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/sos_servce.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="OFireService" contentDisplay="TOP" layoutX="37.0" layoutY="546.0" onAction="#OptionButton" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #FFFCA8; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="Fire Service" textFill="#bfae11">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="106.0" fitWidth="110.0" onDragDetected="#OptionButton" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/fire%20_service.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="OCurrier" contentDisplay="TOP" layoutX="443.0" layoutY="546.0" onAction="#OptionButton" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #F6B9FF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="E-Currier" textFill="#bf67cd">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/e_currier.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="OVoluntary" contentDisplay="TOP" layoutX="849.0" layoutY="546.0" onAction="#OptionButton" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #9FE0FF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="Voluntary and Relief" textFill="#399eca">
+                     <graphic>
+                        <ImageView disable="true" fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/voluntary_relief.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children></Pane>
+            <Pane fx:id="SeparateAmbulance" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here, you can find ambulance in your area, call immediately or request for future&#10;reservation">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <JFXButton fx:id="SignUpButton" layoutX="1112.0" layoutY="316.0" prefHeight="48.0" prefWidth="96.0" style="-fx-background-color: #539FFD;" text="Filter" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <ComboBox fx:id="district1" layoutX="858.0" layoutY="317.0" prefHeight="48.0" prefWidth="217.0" promptText="Jashore" style="-fx-background-color: white; -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="858.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ListView layoutX="37.0" layoutY="414.0" prefHeight="420.0" prefWidth="1196.0" />
+                  <Text layoutX="58.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="420.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="764.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="1106.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="SignUpButton1" layoutX="1100.0" layoutY="517.0" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #539FFD;" text="Request" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Line endX="1045.0" layoutX="159.0" layoutY="492.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <Circle fill="#f3f6a6" layoutX="90.0" layoutY="536.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Text layoutX="135.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Killjoy">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="417.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jashore" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="734.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="SignUpButton11" layoutX="1100.0" layoutY="605.0" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #539FFD;" text="Request" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Line endX="1045.0" layoutX="159.0" layoutY="580.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <Circle fill="#b9ead8" layoutX="90.0" layoutY="624.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Text layoutX="135.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Viper">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="420.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khulna" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="734.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="SignUpButton12" layoutX="1100.0" layoutY="693.0" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: #539FFD;" text="Request" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Line endX="1045.0" layoutX="159.0" layoutY="668.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <Circle fill="#ffddd2" layoutX="90.0" layoutY="712.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Text layoutX="135.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raze">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="408.0" layoutY="720.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shatkhira" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="734.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="SeparateCurrier" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to E-currier service. We provide fastest Intra-city delivery service ">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ComboBox fx:id="district111" layoutX="937.0" layoutY="309.0" prefHeight="48.0" prefWidth="217.0" promptText="Jashore" style="-fx-background-color: white; -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="937.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="425.0" fitWidth="1210.0" layoutX="20.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Currier.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="SignInEmail11111" layoutX="75.0" layoutY="464.0" prefHeight="48.0" prefWidth="608.0" promptText="Enter email here" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: white;" text="154, HMM Road, Katherpool">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Text fill="#578bca" layoutX="75.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick-up Location">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="SignInEmail1111" layoutX="75.0" layoutY="585.0" prefHeight="48.0" prefWidth="608.0" promptText="Enter email here" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: white;" text="23, Loan Office Para, Palbari">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Text fill="#578bca" layoutX="75.0" layoutY="565.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drop-off Location">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="75.0" layoutY="697.0" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Send Request" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="SeparateVoluntary" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to E-currier service. We provide fastest Intra-city delivery service ">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ComboBox fx:id="district111111a" layoutX="937.0" layoutY="309.0" prefHeight="48.0" prefWidth="217.0" promptText="Jashore" style="-fx-background-color: white; -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="937.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="194.0" fitWidth="1196.0" layoutX="35.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/VoluntaryBack.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="194.0" fitWidth="1196.0" layoutX="35.0" layoutY="629.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/VoluntaryBack1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="438.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humanity Trust Foundation">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="434.0" layoutY="683.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jagorani Chakra Foundation">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="482.0" layoutY="529.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Donate" textFill="#f46e7e">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="658.0" layoutY="529.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Request" textFill="#f46e7e">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="483.0" layoutY="754.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Donate" textFill="#f46e7e">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="659.0" layoutY="754.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="125.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Request" textFill="#f46e7e">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="ActiveOfferServices" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#aebdce" layoutX="32.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="213.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offer services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <TextField layoutX="849.0" layoutY="200.0" prefHeight="39.0" prefWidth="356.0" promptText="Search for service..." style="-fx-border-color: #578BCA; -fx-border-width: 2; -fx-border-radius: 7;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="1156.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/search.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <JFXButton contentDisplay="TOP" layoutX="47.0" layoutY="296.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #FFD1D1; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="Blood Bank" textFill="#ff6161">
+                     <graphic>
+                        <ImageView fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/blood_bank.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="453.0" layoutY="296.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #C4C4FF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="Ambulance" textFill="#5e5ebe">
+                     <graphic>
+                        <ImageView fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/ambulance.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="859.0" layoutY="296.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #F6B9FF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="E-Currier" textFill="#bf67cd">
+                     <graphic>
+                        <ImageView fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/e_currier.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="47.0" layoutY="556.0" prefHeight="211.0" prefWidth="356.0" style="-fx-background-color: #9FE0FF; -fx-effect: dropshadow(gaussian, #CBCBCB, 12, 0.1, 5.4, 5.4);" text="Voluntary and Relief" textFill="#399eca">
+                     <graphic>
+                        <ImageView fitHeight="106.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ICON/voluntary_relief.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="SeparateSOS" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here, You can find all the SOS Services">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <JFXButton fx:id="SignUpButton111111111111" layoutX="1112.0" layoutY="316.0" prefHeight="48.0" prefWidth="96.0" style="-fx-background-color: #539FFD;" text="Filter" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <ComboBox fx:id="district11111111" layoutX="858.0" layoutY="317.0" prefHeight="48.0" prefWidth="217.0" promptText="Jashore" style="-fx-background-color: white; -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="858.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ListView layoutX="37.0" layoutY="414.0" prefHeight="420.0" prefWidth="1196.0" />
+                  <Text layoutX="58.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="420.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="749.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Line endX="1045.0" layoutX="159.0" layoutY="492.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <Circle fill="#f3f6a6" layoutX="90.0" layoutY="536.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Text layoutX="135.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kotwali Thana">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="417.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jashore" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="725.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Police Station" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Line endX="1045.0" layoutX="159.0" layoutY="580.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <Circle fill="#b9ead8" layoutX="90.0" layoutY="624.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Text layoutX="135.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bangladesh Railway">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="420.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khulna" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="720.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transportation" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Line endX="1045.0" layoutX="159.0" layoutY="668.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <Circle fill="#ffddd2" layoutX="90.0" layoutY="712.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Text layoutX="135.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RAB - 6">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="408.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shatkhira" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="734.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Police Force" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="district11" layoutX="604.0" layoutY="317.0" prefHeight="48.0" prefWidth="217.0" promptText="Police Station" style="-fx-background-color: white; -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="604.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="1059.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="1029.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="1029.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="1029.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="SeparateBlood" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here, you can find blood donors in your area, call immediately or request for future&#10;reservation">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ComboBox fx:id="districtssss" layoutX="858.0" layoutY="317.0" prefHeight="48.0" prefWidth="217.0" promptText="A+" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="858.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Group">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="SignUpButtondd" layoutX="1112.0" layoutY="316.0" prefHeight="48.0" prefWidth="96.0" style="-fx-background-color: #539FFD;" text="Filter" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <ComboBox fx:id="district1aaaa" layoutX="601.0" layoutY="317.0" prefHeight="48.0" prefWidth="217.0" promptText="Jashore" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="601.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TableView editable="true" layoutX="35.0" layoutY="413.0" prefHeight="420.0" prefWidth="1196.0" style="-fx-background-color: white;">
+                     <columns>
+                        <TableColumn minWidth="-Infinity" prefWidth="334.0" style="-fx-background-color: white;" text="Name" />
+                        <TableColumn minWidth="0.0" prefWidth="193.0" style="-fx-background-color: white;" text="Blood Group" />
+                        <TableColumn prefWidth="220.33334350585938" style="-fx-background-color: white;" text="District" />
+                        <TableColumn prefWidth="293.66668701171875" style="-fx-background-color: white;" text="Contact" />
+                        <TableColumn prefWidth="154.33331298828125" style="-fx-background-color: white;" text="Reserve" />
+                     </columns>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane fx:id="SeparateFireService" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here, you can find fire service in your area, call immediately in case of emergency">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <JFXButton fx:id="SignUpButtonaaaaaaaaaaaaa" layoutX="1112.0" layoutY="316.0" prefHeight="48.0" prefWidth="96.0" style="-fx-background-color: #539FFD;" text="Filter" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <ComboBox fx:id="district1qqq" layoutX="858.0" layoutY="317.0" prefHeight="48.0" prefWidth="217.0" promptText="Jashore" style="-fx-background-color: white; -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="858.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ListView layoutX="37.0" layoutY="414.0" prefHeight="420.0" prefWidth="1196.0" />
+                  <Text layoutX="147.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Line endX="396.0" layoutX="159.0" layoutY="492.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <Text layoutX="144.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jashore" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="147.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khulna" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="135.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shatkhira" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="379.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="349.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="349.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="349.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01234567890" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Line endX="396.0" layoutX="159.0" layoutY="580.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <Line endX="396.0" layoutX="159.0" layoutY="668.0" startX="-100.0" stroke="#f7f7f7" strokeWidth="1.5" />
+                  <ImageView fitHeight="416.0" fitWidth="666.0" layoutX="567.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/fire.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="ProfilePane" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+               <children>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="userID1" fill="#578bca" layoutX="32.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="31.0" fitWidth="42.0" layoutX="1176.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/notification-01.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Circle fill="#ff1f1f" layoutX="1194.0" layoutY="105.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="1075.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="14.0" layoutX="1133.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/shape1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="170.0" layoutX="352.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="563.0" />
+                  <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="453.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profileW.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="displayName" layoutX="586.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayLocation" layoutX="586.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jashore">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="158.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="displayLocation1" layoutX="776.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bangladesh">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="wwwwww" layoutX="160.0" layoutY="440.0" prefHeight="48.0" prefWidth="341.0" promptText="user name here" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Text fill="#578bca" layoutX="160.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);;" text="Name">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="qqqqqqq" layoutX="160.0" layoutY="551.0" prefHeight="48.0" prefWidth="341.0" promptText="user email here" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Text fill="#578bca" layoutX="160.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);;" text="E-mail">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="district" layoutX="160.0" layoutY="657.0" prefHeight="48.0" prefWidth="217.0" promptText="Jashore" style="-fx-background-color: rgba(76, 175, 80, 0.0); -fx-border-radius: 7; -fx-border-width: 2; -fx-border-color: #578BCA; -fx-font-size: 20; -fx-text-inner-color: white;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ComboBox>
+                  <Text fill="#578bca" layoutX="160.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="772.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="SignInEmail2" layoutX="772.0" layoutY="440.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter email here" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);" text="************">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Text fill="#578bca" layoutX="772.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);;" text="Cureent password">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="" layoutX="772.0" layoutY="551.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter email here" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);" text="***************">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Text fill="#578bca" layoutX="772.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);;" text="New password">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="SignInEmail111" layoutX="772.0" layoutY="659.0" prefHeight="48.0" prefWidth="341.0" promptText="Enter email here" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);" text="***************">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Text fill="#578bca" layoutX="772.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-radius: 7; -fx-border-color: #578BCA; -fx-border-width: 2; -fx-background-color: rgba(76, 175, 80, 0.0);;" text="Re-type new password">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="160.0" layoutY="760.0" prefHeight="48.0" prefWidth="245.0" style="-fx-background-color: #539FFD;" text="Update" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="AboutPane" layoutX="2.0" layoutY="1.0" prefHeight="850.0" prefWidth="1266.0" style="-fx-background-color: #F6FAFF;">
+               <children>
+                  <Text fill="#578bca" layoutX="454.0" layoutY="813.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2021 EZ Service.All rights reserved." textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#859db7" layoutX="32.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hey,">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#578bca" layoutX="32.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sova">
+                     <font>
+                        <Font size="49.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#575656" layoutX="32.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This software was created by">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="530.0" fitWidth="369.0" layoutX="28.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileBack.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="SZMirror" fitHeight="325.0" fitWidth="229.0" layoutX="98.0" layoutY="307.0" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileGlass.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="105.0" fitWidth="124.0" layoutX="160.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/dev_profileEmran.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="121.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emran Hosern Emon">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="120.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphic Designer || Full Stack Java Developer">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="SZFacebook" fitHeight="27.0" fitWidth="39.0" layoutX="143.0" layoutY="570.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/facebook.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="SZWhatsApps" fitHeight="27.0" fitWidth="39.0" layoutX="178.0" layoutY="570.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/whatapps.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="SZSkype" fitHeight="27.0" fitWidth="39.0" layoutX="214.0" layoutY="570.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/skype.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="SZLinkedin" fitHeight="27.0" fitWidth="39.0" layoutX="252.0" layoutY="570.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/linkedin.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="530.0" fitWidth="369.0" layoutX="419.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileBack.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ERMirror" fitHeight="325.0" fitWidth="229.0" layoutX="489.0" layoutY="307.0" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileGlass.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="105.0" fitWidth="124.0" layoutX="551.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/dev_profileSizan.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="512.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shiam Ahmed Sizan">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="499.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UI/UX Designer || Full Stack Java Developer">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="ERFacebook" fitHeight="27.0" fitWidth="39.0" layoutX="534.0" layoutY="570.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/facebook.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ERWhatsapp" fitHeight="27.0" fitWidth="39.0" layoutX="569.0" layoutY="570.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/whatapps.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ERSkype" fitHeight="27.0" fitWidth="39.0" layoutX="605.0" layoutY="570.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/skype.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ERLinkedin" fitHeight="27.0" fitWidth="39.0" layoutX="643.0" layoutY="570.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/linkedin.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="SZMailButton" layoutX="112.0" layoutY="525.0" onMouseClicked="#AnimationEntered" prefHeight="31.0" prefWidth="205.0" style="-fx-background-color: #FFAD44;" text="imranhosan.imon11@gmail.com" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ERMailButton" layoutX="497.0" layoutY="525.0" onMouseClicked="#AnimationEntered" prefHeight="31.0" prefWidth="205.0" style="-fx-background-color: #FFAD44;" text="sizan.szn@gmail.com" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="530.0" fitWidth="369.0" layoutX="806.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileBack.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ARMirror" fitHeight="325.0" fitWidth="229.0" layoutX="876.0" layoutY="306.0" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/profileGlass.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="105.0" fitWidth="560.0" layoutX="930.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/dev_profileArif.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="898.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arifuzzaman Arif">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="896.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CSS developers &amp; Web professionals">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="ERFacebook1" fitHeight="27.0" fitWidth="39.0" layoutX="921.0" layoutY="569.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/facebook.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ERWhatsapp1" fitHeight="27.0" fitWidth="39.0" layoutX="956.0" layoutY="569.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/whatapps.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ERSkype1" fitHeight="27.0" fitWidth="39.0" layoutX="992.0" layoutY="569.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/skype.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ERLinkedin1" fitHeight="27.0" fitWidth="39.0" layoutX="1030.0" layoutY="569.0" onMouseClicked="#BrowserLink" onMouseEntered="#AnimationEntered" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/linkedin.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="ERMailButton1" layoutX="888.0" layoutY="524.0" onMouseClicked="#AnimationEntered" prefHeight="31.0" prefWidth="205.0" style="-fx-background-color: #FFAD44;" text="arifuzzaman.arif@gmail.com" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+
+
+         </children></AnchorPane>
+      <AnchorPane prefHeight="850.0" prefWidth="334.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="329.0" layoutX="35.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/eg-service-log.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="homeButton" alignment="TOP_LEFT" layoutX="35.0" layoutY="183.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" style="-fx-background-color: #578BCA;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="home_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/home_h.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="covid_19Button" alignment="TOP_LEFT" layoutX="35.0" layoutY="248.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" text="Covid-19 updates" textFill="#578bca">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="covid_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/covid_b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="profileButton" alignment="TOP_LEFT" layoutX="35.0" layoutY="318.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" text="Profile" textFill="#578bca">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="profile_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/profile_b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="serviceButton" alignment="TOP_LEFT" layoutX="35.0" layoutY="388.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" text="Service request" textFill="#578bca">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="service_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/service_b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="aboutButton" alignment="TOP_LEFT" layoutX="35.0" layoutY="458.0" onAction="#MainBTN_ActionEvent" prefHeight="48.0" prefWidth="260.0" text="About" textFill="#578bca">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="about_icon" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/about_b.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane layoutX="35.0" layoutY="560.0" prefHeight="123.0" prefWidth="264.0" style="-fx-background-color: linear-gradient(from 200px 140px to 35px 20px, #CC73FF, #7CBEFF 100%); ">
+               <children>
+                  <Text fx:id="DATE" fill="WHITE" layoutX="15.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friday, 23th July" wrappingWidth="251.13671875">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="clockText" fill="WHITE" layoutX="53.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 : 16">
+                     <font>
+                        <Font name="System Bold" size="46.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="AMORPM" fill="WHITE" layoutX="204.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PM">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXToggleButton fx:id="SwitchSPA" contentDisplay="RIGHT" layoutX="33.0" layoutY="694.0" onAction="#MainBTN_ActionEvent" prefHeight="64.0" prefWidth="260.0" text="Switch to SP" textFill="#7b7b7b">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXToggleButton>
+            <JFXButton fx:id="logoutButton" alignment="TOP_LEFT" layoutX="55.0" layoutY="753.0" onAction="#MainBTN_ActionEvent" prefHeight="49.0" prefWidth="238.0" text="Logout" textFill="#7b7b7b">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ICON/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="titleBar" onMouseDragged="#mouseDrag" onMousePressed="#mousePressed" prefHeight="40.0" prefWidth="1600.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <Circle fx:id="close" fill="RED" layoutX="1565.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fx:id="minimize" fill="#08e900" layoutX="1528.0" layoutY="20.0" onMouseClicked="#MouseClick" radius="9.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="779.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/eg_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

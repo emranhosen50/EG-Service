@@ -1,0 +1,30 @@
+.TextField
+{
+    -fx-border-radius : 7;
+    -fx-border-color :  #578BCA;
+    -fx-border-width : 2;
+    -fx-background-color : rgba(76, 175, 80, 0.0);
+}
+#passwordField
+{
+    -fx-border-radius : 7;
+    -fx-border-color :  #578BCA;
+    -fx-border-width : 2;
+    -fx-background-color : rgba(76, 175, 80, 0.0);
+}
+#close:hover
+{
+    -fx-fill: #C50000;
+}
+#minimize:hover
+{
+    -fx-fill: #058B00;
+}
+.combo-box
+{
+        -fx-font-size : 21px;
+        -fx-font-family: 'Actor';
+        -fx-text-fill : #989898;
+        -fx-unfocus-color : #989898;
+        -fx-prompt-text-fill: #989898;
+}

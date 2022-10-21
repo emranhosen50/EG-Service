@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EG-Service Project V2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EG_Service_Project_V2_jar</output-path>
+    <root id="archive" name="EG-Service Project V2.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/Main/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="EG-Service Project V2" />
+      <element id="extracted-dir" path="D:/Coding Software/Java Library/AnimateFX-1.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Coding Software/Java Library/controlsfx-8.40.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Coding Software/Java Library/jfoenix-8.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Coding Software/Java Library/mysql-connector-java-8.0.20.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Coding Software/Java Library/TrayTester.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
